@@ -1,0 +1,50 @@
+<footer class="footerA" id="contacto">
+    <div class="footerA__background">
+        <div class="row">
+            <h2 class="heading-secondary text-center">Contáctanos</h2>
+            <p class="p-secondary text-center">Inicia tu proceso</p>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <form class="footerA__form" [formGroup]=formulario ngNativeValidate *ngIf="!submitted">
+                    <div class="footerA__form-input mr-8">
+                        <input formControlName="nombre" type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="footerA__form-input">
+                        <input formControlName="apellido" type="text" name="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="footerA__form-input mr-8">
+                        <input formControlName="email" type="text" name="email" placeholder="Correo">
+                    </div>
+                    <div class="footerA__form-input">
+                        <input formControlName="phone" type="text" name="phone" placeholder="Teléfono">
+                    </div>
+                    <textarea formControlName="description" placeholder="Comentarios" rows=4></textarea>
+                    <a class="btn btn-azul">Quiero Invertir</a>
+                    <input formControlName="anuncio" type="hidden" name="anuncio">
+                    <input formControlName="leadsource" type="hidden" name="leadsource">
+                </form>
+                <div class="form-submitted" *ngIf="submitted">
+                    <h1 class="text-center">¡Gracias!</h1>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <app-mapa></app-mapa>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<div class="copyright">
+    <div class="copyright-social">
+        <ul>
+            <li><a href="https://www.facebook.com/nanodepot"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/NanoDepot"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/nano-depot/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCjzck0nA_X4PUy6Z_2nwtMg"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <p>Copyright © 2018 Nanodepot</p>
+    </div>
+</div>

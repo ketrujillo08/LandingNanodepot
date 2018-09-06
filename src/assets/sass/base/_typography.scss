@@ -1,0 +1,26 @@
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    &::after {
+        content: '';
+        border-bottom: 0.5rem solid #42a5f5;
+        width: 20%;
+        margin: 1.5rem auto;
+        display: block;
+    }
+}
+
+.p-secondary {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: auto;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+}

@@ -1,0 +1,13 @@
+<form ngNativeValidate [formGroup]="formulario" (ngSubmit)="submitForm();" *ngIf="!submitted">
+    <h2>Licencia de Distribución con productos incluidos Inversión desde <span>$45,900 USD</span> + IVA</h2>
+    <input formControlName="nombre" type="text" name="nombre" placeholder="Nombre" required>
+    <input formControlName="apellido" type="text" name="apellido" placeholder="Apellido" required>
+    <input formControlName="phone" type="text" name="phone" placeholder="Teléfono" required>
+    <input formControlName="email" type="text" name="email" placeholder="Correo" required>
+    <input formControlName="anuncio" type="hidden" name="anuncio">
+    <input formControlName="leadsource" type="hidden" name="leadsource">
+    <button [disabled]="submitted" type="submit">Quiero ser Distribuidor</button>
+</form>
+<div class="form-submitted" *ngIf="submitted">
+    <h1 class="text-center">¡Gracias!</h1>
+</div>

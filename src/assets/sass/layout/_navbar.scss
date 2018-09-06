@@ -1,0 +1,55 @@
+.nav__sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    color: $color-white;
+    &-contain {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 25px 0;
+        &--img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        &--menu {
+            position: relative;
+            float: right;
+            &>li {
+                list-style: none;
+                display: inline-block;
+                font-weight: 300;
+                font-size: 1.5rem;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+                a:link,
+                a:visited {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+    &.fixed {
+        background-image: linear-gradient( rgba($color-white, 1)100%, rgba($color-white, 1)100%);
+        color: #000;
+        font-weight: 700;
+        animation: navbarFixed 0.4s ease;
+        .nav__sticky-contain--img {
+            content: url("https://cdn.nanodepot.com/images/nanodepot_azul_negro.png");
+        }
+        .nav__sticky-contain--menu>li {
+            font-weight: 700;
+        }
+    }
+}
+
+@media(max-width:667px) {
+    .nav__sticky {
+        display: none;
+    }
+}

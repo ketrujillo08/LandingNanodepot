@@ -1,0 +1,25 @@
+.featuresA {
+    padding: 8rem 0;
+    &__content {
+        text-align: center;
+        font-size: 2rem;
+        i {
+            font-size: 6rem;
+            line-height: 0.5rem;
+            color: $color-primary-light;
+        }
+    }
+    &__paragraph {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:667px) {
+    .featuresA {
+        &__content {
+            padding: 1.5rem;
+            i {}
+        }
+        &__paragraph {}
+    }
+}

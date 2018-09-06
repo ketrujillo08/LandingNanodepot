@@ -1,0 +1,19 @@
+.text-center {
+    text-align: center;
+}
+
+.mr-8 {
+    margin-right: 0.8rem;
+}
+
+@media(max-width:1024px) {
+    .mr-8 {
+        margin-right: 0.58rem;
+    }
+}
+
+@media(max-width:576px) {
+    .mr-8 {
+        margin-right: 0.8rem;
+    }
+}

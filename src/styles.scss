@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'assets/sass/abstracts/variables';
+@import "~font-awesome/css/font-awesome.css";
+@import 'assets/sass/abstracts/mixin';
+@import 'assets/sass/base/base';
+@import 'assets/sass/base/animations';
+@import 'assets/sass/base/typography';
+@import 'assets/sass/base/utilities';
+@import 'assets/sass/layout/grid';
+@import 'assets/sass/layout/navbar';
+@import 'assets/sass/layout/header';
+@import 'assets/sass/layout/featuresA';
+@import 'assets/sass/layout/footerA';
+@import 'assets/sass/page/landingA';
+@import 'assets/sass/component/video-negocio-diferente';
+@import 'assets/sass/component/btn';
+@import 'assets/sass/component/counterA';
+@import 'assets/sass/component/casosA';
+@import 'assets/sass/component/conoceA';
+@import 'assets/sass/component/mercado';

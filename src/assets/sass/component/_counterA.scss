@@ -1,0 +1,28 @@
+.counter {
+    position: relative;
+    min-height: 35vh;
+    background-image: linear-gradient(to right bottom, rgba($color-white, 0.5), rgba($color-white, 0.5)), url("https://cdn.nanodepot.com/images/headers/nanodepot_negocio_rentable_3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+    padding: 7rem 0;
+    &__contain {
+        margin-bottom: 2rem;
+        &-img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:667px) {
+    .counter {
+        padding: 10rem 0;
+        &__contain {
+            &-img {
+                width: 60%;
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+    }
+}

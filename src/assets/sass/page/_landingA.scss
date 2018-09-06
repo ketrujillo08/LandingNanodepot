@@ -1,0 +1,150 @@
+.landing-a_section__header {
+    position: relative;
+    height: 85vh;
+    background-image: url('http://cdn.nanodepot.com/images/headers/nanodepot_negocio_rentable_2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    color: $color-white;
+    &-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 12rem;
+        &--heading {
+            font-size: 4rem;
+            font-weight: 200;
+            text-align: left;
+            width: 90%;
+            line-height: 7.5rem;
+            span {
+                font-weight: 400;
+                line-height: 5.5rem;
+                font-size: 7rem;
+                box-decoration-break: clone;
+                -webkit-box-decoration-break: clone;
+            }
+        }
+        &--paragraph {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        &--listado {
+            margin-top: 3rem;
+            //padding-left: 1.5rem;
+            li {
+                font-size: 2rem;
+                font-weight: 400;
+                list-style: none;
+                i {
+                    vertical-align: middle;
+                }
+            }
+        }
+        &--form {
+            background: $fondo-negro-opacity;
+            padding: 5rem;
+            h2 {
+                margin: 0;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+                span {
+                    font-weight: 700;
+                }
+            }
+            input,
+            button {
+                border: .1rem solid $color-white;
+                padding: 15px 10px;
+                font-size: 2rem;
+                background: transparent;
+                margin-top: 2rem;
+                width: 100%;
+                color: $color-white;
+                font-size: 1.5rem;
+                &[type=submit] {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .landing-a_section__header {
+        height: auto;
+        box-sizing: content-box;
+        padding: 35rem 0;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        &-content {
+            top: 8rem;
+            &--heading {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                span {
+                    font-size: 4rem;
+                    line-height: 3.5rem;
+                }
+            }
+            &--paragraph {}
+            &--listado {
+                li {}
+            }
+            &--form {
+                padding: 1.5rem;
+                h2 {}
+                input,
+                button {
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:667px) {
+    .landing-a_section__header {
+        padding: 40rem 0;
+        box-sizing: content-box;
+        height: auto;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        &-content {
+            padding: 0 2rem;
+            top: 5rem;
+            &--heading {
+                font-size: 2rem;
+                width: 100%;
+                line-height: 1.5rem;
+                span {
+                    font-size: 3.6rem;
+                    box-decoration-break: unset;
+                    line-height: 3.5rem;
+                }
+            }
+            &--paragraph {
+                font-size: 1.2rem;
+            }
+            &--listado {
+                margin-top: 1rem;
+                li {
+                    font-size: 1.2rem;
+                }
+            }
+            &--form {
+                padding: 2rem;
+                margin-top: 2rem;
+                h2 {
+                    font-size: 1.22rem;
+                }
+                input,
+                button {
+                    font-size: 1.2rem;
+                    box-sizing: border-box;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<nav class="nav__sticky" #nav [class.fixed]="navIsFixed">
+    <div class="nav__sticky-contain">
+        <div class="row">
+            <div class="col-1-of-4">
+                <img class="nav__sticky-contain--img" src="https://cdn.nanodepot.com/images/logoW.png" alt="Nanodepot Negocio Rentable">
+            </div>
+            <div class="col-3-of-4">
+                <ul class="nav__sticky-contain--menu">
+                    <li><a fragment="header" #header (click)="moveTo(header,$event);">Inicio</a></li>
+                    <li><a fragment="historia" #historia (click)="moveTo(historia,$event);">Historia</a></li>
+                    <li><a fragment="distribuidores" #distribuidores (click)="moveTo(distribuidores,$event);">Distribuidores</a></li>
+                    <li><a fragment="mercado" #mercado (click)="moveTo(mercado,$event);">Mercado</a></li>
+                    <li><a fragment="contacto" #contacto (click)="moveTo(contacto,$event);">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
